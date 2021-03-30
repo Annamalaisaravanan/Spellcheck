@@ -2,8 +2,8 @@ import pandas as pd
 from spellchecker import SpellChecker
 import operator
 spell=SpellChecker()
-spell.word_frequency.load_text_file('C:/Users/Annamalai/Downloads/city.txt')
-code_data=pd.read_csv("C:/Users/Annamalai/Downloads/active_airport_new.csv")
+spell.word_frequency.load_text_file('path/to/the/required/word/files')
+code_data=pd.read_csv("path/to/the/dataset/csv format")
 faa_data=code_data["faa"].unique()
 country_code=code_data["CountryCode"].unique()
 user_in=input()
